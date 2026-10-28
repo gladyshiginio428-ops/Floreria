@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Orquidea - Contacto</title>
+  <title>Blow Flowers - Contacto</title>
   <link rel="stylesheet" href="Style.css">
-  
+  <!-- Carga de SweetAlert2 para notificaciones interactivas en JS -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <header>
-    <h1>La Orquidea</h1>
+    <h1>Blow Flowers</h1>
     <p>Especialistas en la venta de orquídeas</p>
   </header>
 
@@ -20,38 +20,58 @@
       <a href="Nosotros.html">Nosotros</a>
       <a href="Mvv.html">Misión y Visión</a>
       <a href="Catalogo.html">Catálogo</a>
+      <a href="Servicios.html">Servicios</a>
       <a href="Contacto.html">Contacto</a>
     </nav>
   </div>
 
   <main class="contenedor">
-    <h2 style="text-align: center; margin-top: 2rem;">Contáctanos</h2>
+    <h2 class="titulo-seccion">Contáctanos</h2>
 
-    <!-- Formulario Complejo -->
+    <!-- Formulario con los 6 campos solicitados -->
     <form id="formularioContacto" class="form-contacto">
+      
+      <!-- Campo 1 -->
       <div class="campo">
         <label for="nombre">Nombre Completo:</label>
         <input type="text" id="nombre" placeholder="Tu nombre" required>
       </div>
 
+      <!-- Campo 2 -->
       <div class="campo">
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" placeholder="correo@ejemplo.com" required>
       </div>
 
+      <!-- Campo 3 (Nuevo) -->
+      <div class="campo">
+        <label for="telefono">Teléfono de Contacto:</label>
+        <input type="tel" id="telefono" placeholder="773 000 0000" required>
+      </div>
+
+      <!-- Campo 4 -->
       <div class="campo">
         <label for="tipoOrquidea">Orquídea de Interés:</label>
         <select id="tipoOrquidea" required>
           <option value="">-- Selecciona una opción --</option>
-          <option value="Phalaenopsis">Phalaenopsis</option>
-          <option value="Cattleya">Cattleya</option>
-          <option value="Dendrobium">Dendrobium</option>
+          <option value="Phalaenopsis Morada">Phalaenopsis Morada</option>
+          <option value="Cattleya Silvestre">Cattleya Silvestre</option>
+          <option value="Dendrobium Premium">Dendrobium Premium</option>
+          <option value="Vanda Exótica Pastel">Vanda Exótica Pastel</option>
+          <option value="Otra">Otra variedad / Personalizado</option>
         </select>
       </div>
 
+      <!-- Campo 5 (Nuevo) -->
       <div class="campo">
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+        <label for="fecha">Fecha Preferida de Entrega o Visita:</label>
+        <input type="date" id="fecha" required>
+      </div>
+
+      <!-- Campo 6 -->
+      <div class="campo">
+        <label for="mensaje">Mensaje o Comentarios:</label>
+        <textarea id="mensaje" rows="4" placeholder="Escribe detalles de tu pedido o consulta aquí..." required></textarea>
       </div>
 
       <button type="submit" class="btn-submit">Enviar Mensaje</button>
@@ -59,7 +79,7 @@
 
     <!-- Mapa de Localización -->
     <section class="mapa-contenedor">
-      <h3>Nuestra Ubicación</h3>
+      <h3 class="titulo-seccion">Nuestra Ubicación</h3>
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.234857210134!2d-99.3400!3d20.0500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDAzJzAwLjAiTiA5OcKwMjAnMjQuMCJX!5e0!3m2!1ses!2smx!4v1600000000000!5m2!1ses!2smx" 
         allowfullscreen="" 
@@ -69,7 +89,7 @@
   </main>
 
   <footer>
-    <p> - Todos los derechos reservados.</p>
+    <p> 2026 Blow Flowers - Todos los derechos reservados.</p>
   </footer>
 
   <script src="funtion.js"></script>
