@@ -1,10 +1,9 @@
-/* Variables de Color: Lila Pastel Clarito */
 :root {
-  --primary-lila: #b39ddb;       /* Lila pastel clarito suave */
-  --primary-hover: #9575cd;      /* Lila para hover */
-  --nav-bg: #9c88be;            /* Barra de navegación lila claro */
-  --hero-bg: #f3e5f5;           /* Fondo del hero lila súper claro */
-  --bg-light: #faf7fc;          /* Fondo general */
+  --primary-lila: #b39ddb;       
+  --primary-hover: #9575cd;      
+  --nav-bg: #9c88be;           
+  --hero-bg: #f3e5f5;          
+  --bg-light: #faf7fc;          
   --text-color: #333333;
   --white: #ffffff;
 }
@@ -28,7 +27,6 @@ body {
   padding: 0 20px;
 }
 
-/* Header con lila clarito */
 header {
   background-color: var(--primary-lila);
   color: var(--white);
@@ -46,7 +44,6 @@ header p {
   font-style: italic;
 }
 
-/* Barra de navegación en lila pastel */
 .nav_bg {
   background-color: var(--nav-bg);
 }
@@ -79,7 +76,6 @@ header p {
   background-color: var(--primary-hover);
 }
 
-/* Hero Section */
 .hero {
   background-color: var(--hero-bg);
   padding: 2.5rem 1rem;
@@ -93,7 +89,6 @@ header p {
   margin-bottom: 0.5rem;
 }
 
-/* Layout para tarjeta centrada de Inicio */
 .grid-cards-centrado {
   display: flex;
   justify-content: center;
@@ -137,7 +132,6 @@ header p {
   margin-bottom: 0.5rem;
 }
 
-/* Formulario */
 .form-contacto {
   background: var(--white);
   padding: 2rem;
@@ -182,7 +176,6 @@ header p {
   background-color: var(--primary-hover);
 }
 
-/* Mapa */
 .mapa-contenedor {
   margin: 2rem 0;
   text-align: center;
@@ -195,7 +188,6 @@ header p {
   border-radius: 12px;
 }
 
-/* Footer en lila suave */
 footer {
   background-color: var(--primary-lila);
   color: var(--white);
