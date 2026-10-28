@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Orquidea - Nosotros</title>
+  <title>La Orquídea - Nosotros</title>
   <link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
   <header>
-    <h1>La Orquidea</h1>
+    <h1>La Orquídea</h1>
     <p>Especialistas en la venta de orquídeas</p>
   </header>
 
+  <!-- Menú limpio con los 5 apartados -->
   <div class="nav_bg">
     <nav class="navegacion-principal contenedor">
       <a href="index.html">Inicio</a>
@@ -30,15 +29,25 @@
       <p>Nuestra trayectoria en la botánica y el arte de las orquídeas.</p>
     </section>
 
-    <article class="card">
-      <h3>Nuestra Historia</h3>
-      <p>Somos una florería apasionada por el arte floral y especializada en la familia de las orquídeas. Buscamos llevar la belleza natural a cada hogar y evento especial, seleccionando cuidadosamente cada ejemplar.</p>
-    </article>
+    <!-- Sección de dos columnas: Texto e Imagen para que no se vea vacío -->
+    <section class="nosotros-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center; margin-bottom: 3rem;">
+      
+      <div class="card" style="text-align: left;">
+        <h3 style="margin-bottom: 1rem; color: #6a1b9a;">Nuestra Historia</h3>
+        <p style="margin-bottom: 1rem;">Somos una florería apasionada por el arte floral y especializada en la familia de las orquídeas. Buscamos llevar la belleza natural a cada hogar y evento especial, seleccionando cuidadosamente cada ejemplar.</p>
+        <p>Trabajamos de la mano con cultivadores expertos para garantizar que cada planta llegue en óptimas condiciones, ofreciendo asesoría continua a nuestros clientes.</p>
+      </div>
+
+      <div class="card" style="padding: 1rem; text-align: center;">
+        <img src="img/img_o.jpg" alt="Invernadero de Orquídeas" style="width: 100%; max-height: 320px; object-fit: cover; border-radius: 8px;">
+        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic;">Cultivo y selección exclusiva de alta calidad.</p>
+      </div>
+
+    </section>
   </main>
 
   <footer>
-    <p> - Todos los derechos reservados.</p>
+    <p> 2026 La Orquídea - Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>

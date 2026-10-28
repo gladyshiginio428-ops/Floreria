@@ -1,16 +1,14 @@
-/* Variables de Color: Tonos Pastel Ultra Claros y Suaves */
 :root {
-  --primary-rosa: #fce4ec;       /* Rosa pastel sumamente clarito para Header y Footer */
-  --secondary-azul: #e1f5fe;     /* Azul pastel sumamente clarito para la barra de navegación */
-  --primary-hover: #f8bbd0;      /* Rosa suave para hover */
-  --azul-hover: #b3e5fc;         /* Azul suave para hover en el menú */
-  --hero-bg: #f9fbe7;           /* Fondo sutil y fresco */
-  --bg-light: #ffffff;          /* Fondo general blanco limpio */
+  --primary-rosa: #fce4ec;       
+  --secondary-azul: #e1f5fe;     
+  --primary-hover: #f8bbd0;      
+  --azul-hover: #b3e5fc;         
+  --hero-bg: #f9fbe7;           
+  --bg-light: #ffffff;         
   --text-color: #333333;
   --white: #ffffff;
-  --accent-purple: #6a1b9a;     /* Tono uva delicado para títulos */
-  --precio-color: #8e24aa;      /* Color elegante para precios */
-}
+  --accent-purple: #6a1b9a;     
+  --precio-color: #8e24aa;      
 
 * {
   box-sizing: border-box;
@@ -31,7 +29,6 @@ body {
   padding: 0 20px;
 }
 
-/* Header en Rosa Súper Clarito */
 header {
   background-color: var(--primary-rosa);
   color: var(--accent-purple);
@@ -50,7 +47,6 @@ header p {
   color: #666666;
 }
 
-/* Barra de Navegación en Azul Súper Clarito */
 .nav_bg {
   background-color: var(--secondary-azul);
   border-top: 1px solid #b3e5fc;
@@ -72,7 +68,7 @@ header p {
 }
 
 .navegacion-principal a {
-  color: #0277bd; /* Azul legible y suave */
+  color: #0277bd;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
@@ -86,7 +82,6 @@ header p {
   color: #01579b;
 }
 
-/* Títulos de Sección */
 .titulo-seccion {
   text-align: center;
   color: var(--accent-purple);
@@ -94,7 +89,6 @@ header p {
   margin: 2rem 0 1.5rem 0;
 }
 
-/* Hero Section */
 .hero {
   background-color: #f3e5f5;
   padding: 2.5rem 1rem;
@@ -108,7 +102,6 @@ header p {
   margin-bottom: 0.5rem;
 }
 
-/* Tarjetas y Grid */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -143,7 +136,6 @@ header p {
   margin-bottom: 0.5rem;
 }
 
-/* Tarjetas de Producto */
 .card-producto {
   position: relative;
   display: flex;
@@ -183,7 +175,6 @@ header p {
   margin-bottom: 1.2rem;
 }
 
-/* Botones con Rosa Súper Claro */
 .btn-comprar {
   display: block;
   background-color: var(--primary-rosa);
@@ -199,7 +190,6 @@ header p {
   background-color: var(--primary-hover);
 }
 
-/* Formulario */
 .form-contacto {
   background: var(--white);
   border: 1px solid #f3e5f5;
@@ -247,7 +237,6 @@ header p {
   background-color: var(--primary-hover);
 }
 
-/* Mapa */
 .mapa-contenedor {
   margin: 2rem 0;
   text-align: center;
@@ -260,7 +249,6 @@ header p {
   border-radius: 12px;
 }
 
-/* Footer */
 footer {
   background-color: var(--primary-rosa);
   color: var(--accent-purple);
