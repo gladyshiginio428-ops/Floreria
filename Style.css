@@ -1,11 +1,15 @@
+/* Variables de Color: Tonos Pastel Ultra Claros y Suaves */
 :root {
-  --primary-lila: #b39ddb;       
-  --primary-hover: #9575cd;      
-  --nav-bg: #9c88be;           
-  --hero-bg: #f3e5f5;          
-  --bg-light: #faf7fc;          
+  --primary-rosa: #fce4ec;       /* Rosa pastel sumamente clarito para Header y Footer */
+  --secondary-azul: #e1f5fe;     /* Azul pastel sumamente clarito para la barra de navegación */
+  --primary-hover: #f8bbd0;      /* Rosa suave para hover */
+  --azul-hover: #b3e5fc;         /* Azul suave para hover en el menú */
+  --hero-bg: #f9fbe7;           /* Fondo sutil y fresco */
+  --bg-light: #ffffff;          /* Fondo general blanco limpio */
   --text-color: #333333;
   --white: #ffffff;
+  --accent-purple: #6a1b9a;     /* Tono uva delicado para títulos */
+  --precio-color: #8e24aa;      /* Color elegante para precios */
 }
 
 * {
@@ -27,25 +31,30 @@ body {
   padding: 0 20px;
 }
 
+/* Header en Rosa Súper Clarito */
 header {
-  background-color: var(--primary-lila);
-  color: var(--white);
+  background-color: var(--primary-rosa);
+  color: var(--accent-purple);
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.2rem 1rem;
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #4a148c;
 }
 
 header p {
-  font-size: 1.2rem;
   font-style: italic;
+  color: #666666;
 }
 
+/* Barra de Navegación en Azul Súper Clarito */
 .nav_bg {
-  background-color: var(--nav-bg);
+  background-color: var(--secondary-azul);
+  border-top: 1px solid #b3e5fc;
+  border-bottom: 1px solid #b3e5fc;
 }
 
 .navegacion-principal {
@@ -63,21 +72,31 @@ header p {
 }
 
 .navegacion-principal a {
-  color: var(--white);
+  color: #0277bd; /* Azul legible y suave */
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 6px;
 }
 
 .navegacion-principal a:hover {
-  background-color: var(--primary-hover);
+  background-color: var(--azul-hover);
+  color: #01579b;
 }
 
+/* Títulos de Sección */
+.titulo-seccion {
+  text-align: center;
+  color: var(--accent-purple);
+  font-size: 1.8rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+/* Hero Section */
 .hero {
-  background-color: var(--hero-bg);
+  background-color: #f3e5f5;
   padding: 2.5rem 1rem;
   text-align: center;
   margin: 2rem 0;
@@ -85,32 +104,24 @@ header p {
 }
 
 .hero h2 {
-  color: #4a148c;
+  color: var(--accent-purple);
   margin-bottom: 0.5rem;
 }
 
-.grid-cards-centrado {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-.grid-cards-centrado .card {
-  max-width: 500px;
-}
-
+/* Tarjetas y Grid */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 
 .card {
   background-color: var(--white);
+  border: 1px solid #f3e5f5;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -121,24 +132,82 @@ header p {
 
 .card img {
   width: 100%;
-  max-height: 250px;
+  height: 200px;
   object-fit: contain;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
 .card h3 {
-  color: #4a148c;
+  color: var(--accent-purple);
   margin-bottom: 0.5rem;
 }
 
+/* Tarjetas de Producto */
+.card-producto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: var(--primary-rosa);
+  color: var(--accent-purple);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--precio-color);
+  margin-bottom: 0.4rem;
+}
+
+.precio-anterior {
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 0.4rem;
+}
+
+.descripcion-corta {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+}
+
+/* Botones con Rosa Súper Claro */
+.btn-comprar {
+  display: block;
+  background-color: var(--primary-rosa);
+  color: var(--accent-purple);
+  text-decoration: none;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Formulario */
 .form-contacto {
   background: var(--white);
+  border: 1px solid #f3e5f5;
   padding: 2rem;
   border-radius: 12px;
   max-width: 600px;
   margin: 2rem auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
 .campo {
@@ -150,18 +219,20 @@ header p {
 .campo label {
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: var(--accent-purple);
 }
 
 .campo input, .campo select, .campo textarea {
   padding: 0.8rem;
-  border: 1px solid #d1c4e9;
+  border: 1px solid #e1bee7;
   border-radius: 6px;
   font-size: 1rem;
+  background-color: #fafafa;
 }
 
 .btn-submit {
-  background-color: var(--primary-lila);
-  color: var(--white);
+  background-color: var(--primary-rosa);
+  color: var(--accent-purple);
   border: none;
   padding: 0.8rem 1.5rem;
   font-size: 1.1rem;
@@ -176,6 +247,7 @@ header p {
   background-color: var(--primary-hover);
 }
 
+/* Mapa */
 .mapa-contenedor {
   margin: 2rem 0;
   text-align: center;
@@ -188,10 +260,12 @@ header p {
   border-radius: 12px;
 }
 
+/* Footer */
 footer {
-  background-color: var(--primary-lila);
-  color: var(--white);
+  background-color: var(--primary-rosa);
+  color: var(--accent-purple);
   text-align: center;
   padding: 1.5rem;
   margin-top: 3rem;
+  font-weight: 600;
 }
