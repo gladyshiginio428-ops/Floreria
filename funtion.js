@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (formulario) {
     formulario.addEventListener('submit', (e) => {
-      e.preventDefault(); // Detiene la recarga nativa de la página
+      e.preventDefault();
 
       const nombre = document.getElementById('nombre').value.trim();
       const email = document.getElementById('email').value.trim();
